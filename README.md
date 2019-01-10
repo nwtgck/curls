@@ -3,6 +3,8 @@
 
 `curl example.com` is a short hand of `curl https://example.com`
 
+This project is a fork of [curl/curl](https://github.com/curl/curl).
+
 ---
 
 <!-- ![curl logo](https://curl.haxx.se/logo/curl-logo.svg) -->
