@@ -41,4 +41,5 @@ script:
   - LDFLAGS="-static" PKG_CONFIG="pkg-config --static" ./configure --disable-shared --enable-static --with-ssl --prefix=$CURLS_INSTALL_PATH
   - make curl_LDFLAGS=-all-static
   - make install curl_LDFLAGS=-all-static
-  - $CURLS_INSTALL_PATH/bin/curl -help
+  - mv $CURLS_INSTALL_PATH/bin/curl $CURLS_INSTALL_PATH/bin/curls
+  - $CURLS_INSTALL_PATH/bin/curls -help

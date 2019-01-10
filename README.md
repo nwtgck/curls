@@ -1,7 +1,7 @@
 # curls
 :closed_lock_with_key: HTTPS-default `curl` command
 
-`curl example.com` is a short hand of `curl https://example.com`
+`curls example.com` is a short hand of `curl https://example.com`
 
 ---
 
