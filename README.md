@@ -1,4 +1,11 @@
-![curl logo](https://curl.haxx.se/logo/curl-logo.svg)
+# curls
+:closed_lock_with_key: HTTPS-default `curl` command
+
+`curl example.com` is a short hand of `curl https://example.com`
+
+---
+
+<!-- ![curl logo](https://curl.haxx.se/logo/curl-logo.svg) -->
 
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/63/badge)](https://bestpractices.coreinfrastructure.org/projects/63)
 [![Coverity passed](https://scan.coverity.com/projects/curl/badge.svg)](https://scan.coverity.com/projects/curl)
