@@ -794,7 +794,8 @@ static CURLUcode seturl(const char *url, CURLU *u, unsigned int flags)
       else if(checkprefix("pop3.", hostname))
         schemep = (char *)"pop3";
       else
-        schemep = (char *)"http";
+        // Use https by default
+        schemep = (char *)"https";
     }
 
     len = strlen(p);
