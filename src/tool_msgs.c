@@ -112,13 +112,13 @@ void helpf(FILE *errors, const char *fmt, ...)
   if(fmt) {
     va_list ap;
     va_start(ap, fmt);
-    fputs("curl: ", errors); /* prefix it */
+    fputs("curls: ", errors); /* prefix it */
     vfprintf(errors, fmt, ap);
     va_end(ap);
   }
-  fprintf(errors, "curl: try 'curl --help' "
+  fprintf(errors, "curls: try 'curls --help' "
 #ifdef USE_MANUAL
-          "or 'curl --manual' "
+          "or 'curls --manual' "
 #endif
           "for more information\n");
 }
