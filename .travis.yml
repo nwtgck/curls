@@ -43,3 +43,12 @@ script:
   - make install curl_LDFLAGS=-all-static
   - mv $CURLS_INSTALL_PATH/bin/curl $CURLS_INSTALL_PATH/bin/curls
   - $CURLS_INSTALL_PATH/bin/curls -help
+
+# (from: https://docs.travis-ci.com/user/deployment/releases/)
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file: $CURLS_INSTALL_PATH/bin/curls
+  skip_cleanup: true
+  on:
+    tags: true
